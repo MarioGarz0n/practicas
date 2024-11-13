@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { JugadorModule } from './jugador/jugador.module';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -16,7 +18,9 @@ import { JugadorModule } from './jugador/jugador.module';
       database: 'pruebas_db',
       autoLoadEntities: true
     }),
-    JugadorModule
+    JugadorModule,
+    UsersModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],

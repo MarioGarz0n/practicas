@@ -13,7 +13,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JugadorService = void 0;
-const service_commons_1 = require("../../commons/service.commons");
+const service_commons_1 = require("../commons/service.commons");
 const jugador_entity_1 = require("../entities/jugador.entity");
 const typeorm_1 = require("typeorm");
 const typeorm_2 = require("@nestjs/typeorm");

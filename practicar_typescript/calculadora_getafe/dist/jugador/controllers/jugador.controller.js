@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JugadorController = void 0;
-const controller_commons_1 = require("../../commons/controller.commons");
+const openapi = require("@nestjs/swagger");
+const controller_commons_1 = require("../commons/controller.commons");
 const common_1 = require("@nestjs/common");
 const jugador_service_1 = require("../service/jugador.service");
+const swagger_1 = require("@nestjs/swagger");
 let JugadorController = class JugadorController extends controller_commons_1.BaseController {
     constructor(jugadorService) {
         super();
@@ -24,6 +26,10 @@ let JugadorController = class JugadorController extends controller_commons_1.Bas
 };
 exports.JugadorController = JugadorController;
 exports.JugadorController = JugadorController = __decorate([
+    (0, swagger_1.ApiTags)('Equipo'),
+    (0, swagger_1.ApiBearerAuth)(),
+    (0, swagger_1.ApiResponse)({ status: 201, description: 'The record has been successfully created.' }),
+    (0, swagger_1.ApiResponse)({ status: 403, description: 'Forbidden.' }),
     (0, common_1.Controller)('api/getafe'),
     __metadata("design:paramtypes", [jugador_service_1.JugadorService])
 ], JugadorController);
