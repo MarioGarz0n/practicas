@@ -10,8 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Jugador = void 0;
+const openapi = require("@nestjs/swagger");
 const typeorm_1 = require("typeorm");
 let Jugador = class Jugador {
+    static _OPENAPI_METADATA_FACTORY() {
+        return { dorsal: { required: true, type: () => Number }, nombre: { required: true, type: () => String }, apellidos: { required: true, type: () => String } };
+    }
 };
 exports.Jugador = Jugador;
 __decorate([

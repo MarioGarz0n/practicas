@@ -1,4 +1,4 @@
-import { BaseService } from "src/commons/service.commons";
+import { BaseService } from "src/jugador/commons/service.commons";
 import { Jugador } from "../entities/jugador.entity";
 import { Repository } from "typeorm";
 export declare class JugadorService extends BaseService<Jugador> {

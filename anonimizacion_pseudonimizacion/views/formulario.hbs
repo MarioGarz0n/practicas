@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario de datos</title>
+  </head>
+  <body>
+    <form id="registrationForm" method="post" action="anonimizacion"> <!-- action="pseudonimizacion" -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="contr">Contraseña:</label>
+            <input type="password" id="contr" name="contr" required>
+        </div>
+        <div class="form-group">
+            <label for="dir">Dirección:</label>
+            <input type="text" id="dir" name="dir">
+        </div>
+        <div class="form-group">
+            <label for="telf">Teléfono:</label>
+            <input type="tel" id="telf" name="telf">
+        </div>
+        <div class="form-group">
+            <label for="fecha_nac">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac">
+        </div>
+        <button type="submit">Registrar</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
